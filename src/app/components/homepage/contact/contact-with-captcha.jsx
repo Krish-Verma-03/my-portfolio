@@ -51,7 +51,6 @@ function ContactWithCaptcha() {
       const teleRes = await axios.post(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, input);
       
       if (res.status === 200 || teleRes.status === 200) {
-        {console.log(res.status)}
         toast.success('Message sent successfully!');
         setInput({
           name: '',
@@ -61,12 +60,10 @@ function ContactWithCaptcha() {
         setCaptcha(null);
       }
       else{
-        console.log("andr h else k",res.status)
         toast.error('Failed to send message!');
         setCaptcha(null);
       }
     } catch (error) {
-      console.log("andr h catch k")
       toast.error(error?.text || error);
     };
   };

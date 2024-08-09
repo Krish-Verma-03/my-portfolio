@@ -11,7 +11,7 @@ export const projectsData = [
         tools: ['Next JS', 'React', 'Javacript', 'SCSS', 'Telegram Bot', 'EmailJs', 'Typescript', 'TailwindCSS',"Vercel"],
         role: 'Full Stack Developer',
         code: '',
-        demo: 'https://github.com/Krish-Verma-03/portfolio',
+        demo: 'https://krish-verma-portfolio.vercel.app/',
         image: crefin,
     },
     {
